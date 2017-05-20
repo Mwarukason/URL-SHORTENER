@@ -1,5 +1,18 @@
 <?php
+  if (isset($_POST['url'])) {
+    $urls = file_get_contents("urls.json");
+    //need to decode
+    $urls = json_decode($urls, true);
 
+    //create random string
+    $random = substr(sha1(microtime()),0,9);
+
+    //checking random string if exist in json file
+    if (!isset($urls[$random])) {
+        urls[$random] = $_POST['url'];
+    }
+
+  }
 
  ?>
 
