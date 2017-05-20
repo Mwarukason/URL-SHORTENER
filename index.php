@@ -11,7 +11,8 @@
     if (!isset($urls[$random])) {
         urls[$random] = $_POST['url'];
     }
-
+    //how to save urls to json file
+    file_put_contents('urls.json',json_encode($urls));
   }
 
  ?>
