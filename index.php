@@ -13,6 +13,9 @@
     }
     //how to save urls to json file
     file_put_contents('urls.json',json_encode($urls));
+    //user doesnt know Shortened url, so need to print
+    //to see, whenever user reg new url will see.
+    echo "Shortened URL: localhost/url-shortene/url.php?url={$random}";
   }
 
  ?>
@@ -30,9 +33,9 @@
      </style>
    </head>
    <body>
-     <form class="" action="index.html" method="post">
+     <form class="" action="" method="POST">
        <input type="text" name="url" value="Enter your url..">
-       <input type="submit" name="" value="Submit URL">
+       <input type="submit" name="" value="Submit URL ">
      </form>
 
    </body>
