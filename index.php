@@ -29,6 +29,7 @@
     <style type = "text/css">
         body{
           margin: 0;
+          background-color: #e6e6e6;
           }
         .form{
           margin: 0 auto;;
