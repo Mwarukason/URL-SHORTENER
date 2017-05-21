@@ -2,7 +2,7 @@
 URL Shortener Application
 
 ##This is simple url Shortener that use json format file to store data as a replacement of actual database
-to help to store the Shortened url before retrievd back to your the full path.
+to help to store the Shortened url before retrievd back to user with the full Shortened path.
 
 ##Requirements.
 1. Wamp server / or any server of your preference.
