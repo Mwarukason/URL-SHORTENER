@@ -15,7 +15,8 @@
     file_put_contents('urls.json',json_encode($urls));
     //user doesnt know Shortened url, so need to print
     //to see, whenever user reg new url will see.
-    echo "Shortened URL: localhost/url-shortener/url.php?url={$random}";
+    echo "<p align=center>Shortened URL: localhost/url-shortener/url.php?url={$random}</p>";
+
   }
 
 ?>
