@@ -9,7 +9,7 @@
 
     //checking random string if exist in json file
     if (!isset($urls[$random])) {
-        urls[$random] = $_POST['url'];
+        $urls[$random] = $_POST['url'];
     }
     //how to save urls to json file
     file_put_contents('urls.json',json_encode($urls));
@@ -32,7 +32,7 @@
    <body>
      <form class="" action="index.html" method="post">
        <input type="text" name="url" value="Enter your url..">
-       <input type="submit" name="" value="">
+       <input type="submit" name="" value="Submit URL">
      </form>
 
    </body>
